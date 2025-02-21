@@ -1,0 +1,110 @@
+/* Base & Typography */
+body {
+    background-color: #fff8e1; /* warm light tone */
+    font-family: 'Montserrat', sans-serif;
+    color: #ffe08a;
+  }
+  
+  /* Header */
+  #site-header {
+    border-bottom: 4px solid #43a047; /* green accent */
+  }
+  .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 2.2rem;
+  }
+  
+  /* Navigation Links */
+  .nav-links li a {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #4e342e;
+    transition: color 0.3s ease;
+  }
+  .nav-links li a:hover {
+    color: #d32f2f; /* fiery red on hover */
+  }
+  
+  /* Hero Section */
+  #hero {
+    position: relative;
+    background: url('../images/mexican-pattern.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  #hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .hero-container {
+    position: relative;
+    z-index: 2;
+  }
+  #hero h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  #hero p.lead {
+    font-size: 1.5rem;
+  }
+  
+  /* Product Section */
+  .product-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .product-image img {
+    border: 4px solid #43a047;
+    border-radius: 5px;
+  }
+  
+  /* Recipes Section Cards */
+  .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .card-title {
+    color: #d32f2f;
+  }
+  
+  /* Contact Section */
+  .contact-info a {
+    color: #d32f2f;
+    text-decoration: none;
+  }
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #d32f2f;
+    color: #fff;
+  }
+  footer a {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #ffe082;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #hero h2 {
+      font-size: 2.5rem;
+    }
+    #hero p.lead {
+      font-size: 1.25rem;
+    }
+  }
+  
